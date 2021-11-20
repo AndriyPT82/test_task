@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/test_task/static/css/main.8e70ccc0.chunk.css",
-    "main.js": "/test_task/static/js/main.9aeab9cd.chunk.js",
-    "main.js.map": "/test_task/static/js/main.9aeab9cd.chunk.js.map",
+    "main.css": "/test_task/static/css/main.2d7b6000.chunk.css",
+    "main.js": "/test_task/static/js/main.0a7c8b21.chunk.js",
+    "main.js.map": "/test_task/static/js/main.0a7c8b21.chunk.js.map",
     "runtime-main.js": "/test_task/static/js/runtime-main.24896618.js",
     "runtime-main.js.map": "/test_task/static/js/runtime-main.24896618.js.map",
     "static/css/2.6ca69eca.chunk.css": "/test_task/static/css/2.6ca69eca.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.f731ba3c.chunk.js.map": "/test_task/static/js/2.f731ba3c.chunk.js.map",
     "index.html": "/test_task/index.html",
     "static/css/2.6ca69eca.chunk.css.map": "/test_task/static/css/2.6ca69eca.chunk.css.map",
-    "static/css/main.8e70ccc0.chunk.css.map": "/test_task/static/css/main.8e70ccc0.chunk.css.map",
+    "static/css/main.2d7b6000.chunk.css.map": "/test_task/static/css/main.2d7b6000.chunk.css.map",
     "static/js/2.f731ba3c.chunk.js.LICENSE.txt": "/test_task/static/js/2.f731ba3c.chunk.js.LICENSE.txt",
     "static/media/index.css": "/test_task/static/media/roboto-latin-900italic.cb5ad999.woff2"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.24896618.js",
     "static/css/2.6ca69eca.chunk.css",
     "static/js/2.f731ba3c.chunk.js",
-    "static/css/main.8e70ccc0.chunk.css",
-    "static/js/main.9aeab9cd.chunk.js"
+    "static/css/main.2d7b6000.chunk.css",
+    "static/js/main.0a7c8b21.chunk.js"
   ]
 }
