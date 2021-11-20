@@ -11,21 +11,20 @@ export const Input = ({
   handleBlur,
   errorMessage,
   clearField,
-
 }) => {
 
   return (
-    <div
-      className="input-container"
-      error-message={errorMessage}
-    >
-      {!!errorMessage && <div
-        className="input-cleaner"
-        name={inputName}
-        onClick={clearField}
-      >
-        ⤫
-      </div>}
+    <div className="input-container" error-message={errorMessage}>
+      {!!errorMessage && !!inputValue && <>
+        <span
+          className="input-cleaner"
+          name={inputName}
+          onClick={clearField}
+        >
+          ⤫
+        </span>
+      </>}
+      
       <input
         className={classNames(
           'input',

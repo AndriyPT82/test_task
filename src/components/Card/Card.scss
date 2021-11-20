@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 352px;
   height: 256px;
   border-radius: 23px;
@@ -8,11 +9,11 @@
   background-color: #fff;
   box-shadow: 24px 24px 40px rgba(75, 207, 160, 0.08);
 
-  &__close {
+  &__closer {
     position: absolute;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: #f2f2f2;
     border-radius: 50%;
     width: 40px;

@@ -1,8 +1,6 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import classNames from 'classnames';
 import './Form.scss';
-import { AppContext } from '../../App';
 import { Input } from '../Input';
 
 export const Form = () => {
@@ -15,7 +13,7 @@ export const Form = () => {
     number: '',
   })
 
-  const history = useHistory()
+  const history = useHistory();
 
   const formValidator = (name, value) => {
     const errorsFields = {};
@@ -23,7 +21,9 @@ export const Form = () => {
 
     if (!value.length || (value.match(/\d/) && name === 'name')) {
       isValid = false;
-      errorsFields[name] = !value.length ? 'This field in required' : 'Only letters allowed';
+      errorsFields[name] = !value.length
+        ? 'This field in required'
+        : 'Only letters allowed';
     } else if (name === 'number' && (isNaN(value) || value.length !== 12)) {
       isValid = false;
       const errorMessage = isNaN(+value)
@@ -33,7 +33,7 @@ export const Form = () => {
       errorsFields[name] = errorMessage;
     };
 
-    !isValid && setErrors(errors => ({ ...errors, ...errorsFields }))
+    !isValid && setErrors(errors => ({ ...errors, ...errorsFields }));
 
     return isValid;
   }
@@ -50,14 +50,11 @@ export const Form = () => {
     for (const input of Object.entries(inputValue)) {
       const [name, value] = input;
       if (!formValidator(name, value)) {
-        isValid = false
-      }
+        isValid = false;
+      };
     }
 
-    if (isValid) {
-      console.log(inputValue)
-      history.push('/')
-    };
+    isValid && history.push('/');
   }
 
   const clearField = (event) => {
@@ -69,7 +66,11 @@ export const Form = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    if (errors[name]) setErrors(state => ({ ...state, [name]: '' }))
+
+    if (errors[name]) {
+      setErrors(state => ({ ...state, [name]: '' }))
+    };
+
     setInputValue(state => ({ ...state, [name]: value }))
   };
 
@@ -80,7 +81,6 @@ export const Form = () => {
       className="form"
       onSubmit={handleSubmit}
     >
-
       <Input
         inputName={'name'}
         inputValue={name}
@@ -90,7 +90,6 @@ export const Form = () => {
         handleBlur={handleBlur}
         clearField={clearField}
       />
-
 
       <Input
         inputName={'number'}

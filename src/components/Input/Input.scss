@@ -13,15 +13,12 @@
 .input-cleaner {
   position: absolute;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   top: 28px;
   right: 10px;
   width: 24px;
   height: 24px;
   transform: translateY(-50%);
-  border: 1px solid transparent;
   background-color: rgb(255, 0, 0);
   color: white;
   font-weight: bold;

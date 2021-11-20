@@ -18,9 +18,7 @@ export const Modal = () => {
   }, [id])
 
   return (
-    <div
-      className="modal"
-    >
+    <div className="modal">
       <Card modal={true} {...good} />
     </div>
   )
